@@ -10,8 +10,13 @@ author_email: info@tibetaction.net
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+baseurl: ""
+url: "https://https://leykawork1-netizen.github.io"
+
+
 # Don't process these
 exclude:
   - Gemfile
   - Gemfile.lock
+
   - README.md
