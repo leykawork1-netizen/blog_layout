@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Dhunmma</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="header-container">
+      <div class="site-logo">
+        <a href="/">
+            <img src="/assets/images/logo.png" alt="Dhunmma" class="logo-img">
+        </a>
+      </div>
+      <div class="header-right">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+        <button class="search-toggle" onclick="toggleSearch()" aria-label="Search">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <style>
+  .about-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .about-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    border: 5px solid var(--accent);
+    object-fit: cover;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    font-family: 'Lora', serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--primary);
+  }
+  
+  .about-subtitle {
+    font-size: 18px;
+    color: var(--text-light);
+  }
+  
+  .about-content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text);
+  }
+  
+  .about-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  
+  .about-content p {
+    margin-bottom: 25px;
+  }
+  
+  .about-content ul {
+    margin: 25px 0;
+    padding-left: 30px;
+  }
+  
+  .about-content li {
+    margin-bottom: 12px;
+  }
+  
+  .cta-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .cta-box h3 {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .cta-box p {
+    font-size: 16px;
+    opacity: 0.95;
+    margin-bottom: 25px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: white;
+    color: var(--accent);
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 32px;
+    }
+    
+    .about-content {
+      font-size: 17px;
+    }
+    
+    .about-content h2 {
+      font-size: 26px;
+    }
+  }
+</style>
+
+<div class="about-container">
+  <header class="about-header">
+    <h1 class="about-title">About Me</h1>
+    <p class="about-subtitle">Nice to meet you!</p>
+  </header>
+  
+  <div class="about-content">
+    <p>Hi! I'm <strong>tibcert</strong>, and welcome to my corner of the internet.</p>
+    
+    <p>This blog is where I share my thoughts, experiences, and insights on topics that fascinate me. Whether it's technology, life lessons, creative pursuits, or just random musings, you'll find it all here.</p>
+    
+    <h2>What I Write About</h2>
+    
+    <p>My writing covers a diverse range of topics, including:</p>
+    
+    <ul>
+      <li><strong>Technology & Development</strong> - Exploring the latest in tech, programming tips, and digital innovation</li>
+      <li><strong>Personal Growth</strong> - Lessons learned, productivity hacks, and self-improvement strategies</li>
+      <li><strong>Creative Endeavors</strong> - Art, design, writing, and other creative pursuits</li>
+      <li><strong>Life & Travel</strong> - Adventures, experiences, and stories from around the world</li>
+    </ul>
+    
+    <h2>Why This Blog Exists</h2>
+    
+    <p>I created this space to document my journey, share knowledge, and connect with like-minded individuals. Writing helps me clarify my thoughts and contribute something meaningful to the online community.</p>
+    
+    <p>If you find value in what I share, I'd love to hear from you. Feel free to reach out anytime!</p>
+    
+    <h2>About This Site</h2>
+    
+    <p>This blog is built with <strong>Jekyll</strong>, a static site generator that prioritizes simplicity, speed, and security. It's hosted on GitHub Pages and designed with a focus on readability and elegant typography.</p>
+  </div>
+  
+  <div class="cta-box">
+    <h3>Let's Connect</h3>
+    <p>Want to get in touch? I'd love to hear from you.</p>
+    <a href="mailto:info@tibetaction.net" class="cta-button">Send Me an Email</a>
+  </div>
+</div>
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Dhunmma</h3>
+          <p>Thoughts, stories and ideas</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p>Follow along for more stories and updates.</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Dhunmma. Crafted with Jekyll.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Search Modal -->
+  <div id="searchModal" class="search-modal">
+    <div class="search-modal-content">
+      <div class="search-header">
+        <input type="text" id="searchInput" placeholder="Search posts..." autofocus>
+        <button onclick="toggleSearch()" class="search-close" aria-label="Close search">&times;</button>
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </div>
+  
+  <!-- Search JavaScript -->
+  <script>
+    let searchData = [];
+    
+    // Load search data
+    fetch('/search.json')
+      .then(response => response.json())
+      .then(data => {
+        searchData = data;
+      })
+      .catch(error => {
+        console.error('Error loading search data:', error);
+      });
+    
+    // Toggle search modal
+    function toggleSearch() {
+      const modal = document.getElementById('searchModal');
+      const input = document.getElementById('searchInput');
+      
+      if (modal.classList.contains('active')) {
+        modal.classList.remove('active');
+        input.value = '';
+        document.getElementById('searchResults').innerHTML = '';
+        document.body.style.overflow = '';
+      } else {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => input.focus(), 100);
+      }
+    }
+    
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const modal = document.getElementById('searchModal');
+        if (modal.classList.contains('active')) {
+          toggleSearch();
+        }
+      }
+    });
+    
+    // Close on background click
+    document.getElementById('searchModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        toggleSearch();
+      }
+    });
+    
+    // Search functionality
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const query = e.target.value.toLowerCase().trim();
+      const resultsDiv = document.getElementById('searchResults');
+      
+      if (query.length < 2) {
+        resultsDiv.innerHTML = '<div style="padding: 40px; text-align: center; color: var(--text-light);">Type at least 2 characters to search...</div>';
+        return;
+      }
+      
+      const results = searchData.filter(post => {
+        return post.title.toLowerCase().includes(query) ||
+               post.content.toLowerCase().includes(query) ||
+               post.tags.some(tag => tag.toLowerCase().includes(query));
+      });
+      
+      if (results.length === 0) {
+        resultsDiv.innerHTML = `
+          <div class="search-no-results">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <p>No results found for "<strong>${query}</strong>"</p>
+            <p style="font-size: 14px; margin-top: 10px;">Try different keywords</p>
+          </div>
+        `;
+        return;
+      }
+      
+      resultsDiv.innerHTML = results.map(post => {
+        // Get excerpt with context around the match
+        let excerpt = post.excerpt;
+        const contentLower = post.content.toLowerCase();
+        const queryIndex = contentLower.indexOf(query);
+        
+        if (queryIndex > -1) {
+          const start = Math.max(0, queryIndex - 60);
+          const end = Math.min(post.content.length, queryIndex + 150);
+          excerpt = '...' + post.content.substring(start, end) + '...';
+        }
+        
+        return `
+          <a href="${post.url}" class="search-result-item">
+            <div class="search-result-title">${highlightText(post.title, query)}</div>
+            <div class="search-result-meta">${post.date}${post.tags.length > 0 ? ' • ' + post.tags.join(', ') : ''}</div>
+            <div class="search-result-excerpt">${highlightText(excerpt, query)}</div>
+          </a>
+        `;
+      }).join('');
+    });
+    
+    // Highlight matching text
+    function highlightText(text, query) {
+      const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+      return text.replace(regex, '<mark>$1</mark>');
+    }
+    
+    // Escape special regex characters
+    function escapeRegex(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+  </script>
+  
+</body>
+</html>

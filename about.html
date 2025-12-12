@@ -1,0 +1,159 @@
+---
+layout: default
+title: About
+---
+
+<style>
+  .about-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .about-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    border: 5px solid var(--accent);
+    object-fit: cover;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    font-family: 'Lora', serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--primary);
+  }
+  
+  .about-subtitle {
+    font-size: 18px;
+    color: var(--text-light);
+  }
+  
+  .about-content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--text);
+  }
+  
+  .about-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  
+  .about-content p {
+    margin-bottom: 25px;
+  }
+  
+  .about-content ul {
+    margin: 25px 0;
+    padding-left: 30px;
+  }
+  
+  .about-content li {
+    margin-bottom: 12px;
+  }
+  
+  .cta-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .cta-box h3 {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .cta-box p {
+    font-size: 16px;
+    opacity: 0.95;
+    margin-bottom: 25px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: white;
+    color: var(--accent);
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 32px;
+    }
+    
+    .about-content {
+      font-size: 17px;
+    }
+    
+    .about-content h2 {
+      font-size: 26px;
+    }
+  }
+</style>
+
+<div class="about-container">
+  <header class="about-header">
+    <h1 class="about-title">About Me</h1>
+    <p class="about-subtitle">Nice to meet you!</p>
+  </header>
+  
+  <div class="about-content">
+    <p>Hi! I'm <strong>{{ site.author }}</strong>, and welcome to my corner of the internet.</p>
+    
+    <p>This blog is where I share my thoughts, experiences, and insights on topics that fascinate me. Whether it's technology, life lessons, creative pursuits, or just random musings, you'll find it all here.</p>
+    
+    <h2>What I Write About</h2>
+    
+    <p>My writing covers a diverse range of topics, including:</p>
+    
+    <ul>
+      <li><strong>Technology & Development</strong> - Exploring the latest in tech, programming tips, and digital innovation</li>
+      <li><strong>Personal Growth</strong> - Lessons learned, productivity hacks, and self-improvement strategies</li>
+      <li><strong>Creative Endeavors</strong> - Art, design, writing, and other creative pursuits</li>
+      <li><strong>Life & Travel</strong> - Adventures, experiences, and stories from around the world</li>
+    </ul>
+    
+    <h2>Why This Blog Exists</h2>
+    
+    <p>I created this space to document my journey, share knowledge, and connect with like-minded individuals. Writing helps me clarify my thoughts and contribute something meaningful to the online community.</p>
+    
+    <p>If you find value in what I share, I'd love to hear from you. Feel free to reach out anytime!</p>
+    
+    <h2>About This Site</h2>
+    
+    <p>This blog is built with <strong>Jekyll</strong>, a static site generator that prioritizes simplicity, speed, and security. It's hosted on GitHub Pages and designed with a focus on readability and elegant typography.</p>
+  </div>
+  
+  <div class="cta-box">
+    <h3>Let's Connect</h3>
+    <p>Want to get in touch? I'd love to hear from you.</p>
+    <a href="mailto:{{ site.author_email | default: 'hello@example.com' }}" class="cta-button">Send Me an Email</a>
+  </div>
+</div>

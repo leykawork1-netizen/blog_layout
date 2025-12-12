@@ -1,0 +1,17 @@
+# Site Settings
+title: Dhunmma
+description: Thoughts, stories and ideas
+author: tibcert
+author_bio: A writer, creator, and thinker sharing stories that matter.
+author_email: info@tibetaction.net
+# author_avatar: /images/avatar.jpg  # Uncomment and add your image
+
+# Build Settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Don't process these
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
