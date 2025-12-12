@@ -212,10 +212,10 @@ title: Home
 <div class="posts-grid">
   {% for post in site.posts %}
   <article class="post-card">
-    <a href="{{ post.url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
+    <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%;">
       <div class="post-card-image">
         {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
         {% else %}
         <div class="post-card-image-placeholder">{{ post.title | slice: 0 }}</div>
         {% endif %}
@@ -239,5 +239,6 @@ title: Home
   </article>
   {% endfor %}
 </div>
+
 
 {% endif %}
