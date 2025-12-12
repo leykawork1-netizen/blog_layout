@@ -11,7 +11,7 @@ markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
 baseurl: "/blog_layout"
-url: "https://https://leykawork1-netizen.github.io"
+url: "https://leykawork1-netizen.github.io"
 
 
 # Don't process these
@@ -20,5 +20,6 @@ exclude:
   - Gemfile.lock
 
   - README.md
+
 
 
